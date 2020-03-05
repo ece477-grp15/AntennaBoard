@@ -3508,6 +3508,15 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <wire x1="30.48" y1="144.78" x2="50.8" y2="144.78" width="0.1524" layer="91"/>
 <label x="45.72" y="144.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="SDA/NSS/RX"/>
+<wire x1="149.86" y1="124.46" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="127" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
+<label x="182.88" y="124.46" size="1.778" layer="95"/>
+<wire x1="175.26" y1="124.46" x2="182.88" y2="124.46" width="0.1524" layer="91"/>
+<junction x="175.26" y="124.46"/>
+</segment>
 </net>
 <net name="RST" class="0">
 <segment>
@@ -3595,15 +3604,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="U$1" gate="G$1" pin="IRQ"/>
 <wire x1="149.86" y1="119.38" x2="165.1" y2="119.38" width="0.1524" layer="91"/>
 <label x="160.02" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SDA" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="SDA/NSS/RX"/>
-<wire x1="149.86" y1="124.46" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="127" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
-<label x="160.02" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">

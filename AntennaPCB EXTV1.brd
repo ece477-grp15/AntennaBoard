@@ -1292,9 +1292,6 @@ Please make sure your boards conform to these design rules.
 <wire x1="18.9738" y1="8.2296" x2="18.9738" y2="5.3086" width="0.3048" layer="1"/>
 <wire x1="18.9738" y1="5.3086" x2="18.9992" y2="5.2832" width="0.3048" layer="1"/>
 </signal>
-<signal name="RST">
-<contactref element="U$1" pad="6"/>
-</signal>
 <signal name="ANT_1">
 <contactref element="U$1" pad="11"/>
 <contactref element="L1" pad="1"/>
