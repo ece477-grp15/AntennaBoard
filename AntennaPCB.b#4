@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -175,10 +175,6 @@
 <wire x1="76.2" y1="0" x2="76.2" y2="38.1" width="0" layer="20"/>
 <wire x1="76.2" y1="38.1" x2="0" y2="38.1" width="0" layer="20"/>
 <wire x1="0" y1="38.1" x2="0" y2="0" width="0" layer="20"/>
-<text x="17.5" y="31.6" size="1" layer="125">Antenna Board V1
-Group 15 Dabble
-Melchor De La Garza
-Cynthia Zatlokowicz</text>
 </plain>
 <libraries>
 <library name="Seeed-Capacitor" urn="urn:adsk.eagle:library:464">
@@ -763,48 +759,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 </package>
 </packages>
 </library>
-<library name="SparkFun-Hardware" urn="urn:adsk.eagle:library:519">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-This library contains board components that are not electrical in nature, such as stand-offs, magnets, and Actobotics. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="STAND-OFF" urn="urn:adsk.eagle:footprint:38612/1" library_version="1">
-<description>&lt;h3&gt;Standoff (#4 Screw)&lt;/h3&gt;
-&lt;p&gt;This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components.&lt;/p&gt;
-&lt;h4&gt;Devices Using&lt;/h4&gt;
-&lt;ul&gt;&lt;li&gt;STAND-OFF&lt;/li&gt;&lt;/ul&gt;</description>
-<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
-<hole x="0" y="0" drill="3.302"/>
-<text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="STAND-OFF" urn="urn:adsk.eagle:package:38630/1" type="box" library_version="1">
-<description>Standoff (#4 Screw)
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components.
-Devices Using
-STAND-OFF</description>
-<packageinstances>
-<packageinstance name="STAND-OFF"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1001,156 +955,82 @@ Please make sure your boards conform to these design rules.
 <elements>
 <element name="C1" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" package3d_urn="urn:adsk.eagle:package:32378/1" value="1uf" x="8.3692" y="10.2282" rot="R180">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="8.3692" y="10.2282" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="8.6232" y="8.9582" size="0.635" layer="33" ratio="10" rot="R90"/>
-<attribute name="NAME" x="7.4802" y="8.9582" size="0.889" layer="25" ratio="11" rot="R90"/>
-<attribute name="VALUE" x="9.9567" y="8.9582" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="180pF" x="20.828" y="18.542" rot="R90">
-<attribute name="NAME" x="20.066" y="18.542" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-11661" x="20.828" y="18.542" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="21.59" y="18.542" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="33pF" x="22.9616" y="15.113" rot="R90">
-<attribute name="NAME" x="22.1996" y="15.113" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-10142" x="22.9616" y="15.113" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="23.7236" y="15.113" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="C12" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="33pF" x="22.9616" y="18.5166" rot="R270">
-<attribute name="NAME" x="23.7236" y="18.5166" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-10142" x="22.9616" y="18.5166" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="22.1996" y="18.5166" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="C13" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="270PF" x="25.1206" y="15.113" rot="R270">
-<attribute name="NAME" x="25.8826" y="15.113" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-13339" x="25.1206" y="15.113" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="24.3586" y="15.113" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="C14" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="270PF" x="25.1206" y="18.5166" rot="R270">
-<attribute name="NAME" x="25.8826" y="18.5166" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-13339" x="25.1206" y="18.5166" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="24.3586" y="18.5166" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="C2" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" package3d_urn="urn:adsk.eagle:package:32378/1" value="1uf" x="10.2554" y="10.2282" rot="R180">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="10.2554" y="10.2282" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="10.5094" y="8.9582" size="0.635" layer="33" ratio="10" rot="R90"/>
-<attribute name="NAME" x="9.3664" y="8.9582" size="0.889" layer="25" ratio="11" rot="R90"/>
-<attribute name="VALUE" x="11.8429" y="8.9582" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C3" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" package3d_urn="urn:adsk.eagle:package:32378/1" value="1uf" x="15.7814" y="19.1266" rot="R270">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="15.7814" y="19.1266" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="17.0514" y="19.3806" size="0.635" layer="33" ratio="10" rot="R180"/>
-<attribute name="NAME" x="17.0514" y="18.2376" size="0.889" layer="25" ratio="11" rot="R180"/>
-<attribute name="VALUE" x="17.0514" y="20.7141" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C4" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" package3d_urn="urn:adsk.eagle:package:32378/1" value="1uf" x="12.573" y="22.5298" rot="R270">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="12.573" y="22.5298" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="13.843" y="22.7838" size="0.635" layer="33" ratio="10" rot="R180"/>
-<attribute name="NAME" x="13.843" y="21.6408" size="0.889" layer="25" ratio="11" rot="R180"/>
-<attribute name="VALUE" x="13.843" y="24.1173" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C5" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" package3d_urn="urn:adsk.eagle:package:32378/1" value="1uf" x="5.8674" y="4.7498" rot="R90">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="5.8674" y="4.7498" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="4.5974" y="4.4958" size="0.635" layer="33" ratio="10"/>
-<attribute name="NAME" x="4.5974" y="5.6388" size="0.889" layer="25" ratio="11"/>
-<attribute name="VALUE" x="4.5974" y="3.1623" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C6" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" package3d_urn="urn:adsk.eagle:package:32378/1" value="1uf" x="5.8674" y="2.7432" rot="R90">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="5.8674" y="2.7432" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="4.5974" y="2.4892" size="0.635" layer="33" ratio="10"/>
-<attribute name="NAME" x="4.5974" y="3.6322" size="0.889" layer="25" ratio="11"/>
-<attribute name="VALUE" x="4.5974" y="1.1557" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C7" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" package3d_urn="urn:adsk.eagle:package:32378/1" value="7pF" x="10.4394" y="28.956" rot="R90">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="10.4394" y="28.956" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="9.1694" y="28.702" size="0.635" layer="33" ratio="10"/>
-<attribute name="NAME" x="9.1694" y="29.845" size="0.889" layer="25" ratio="11"/>
-<attribute name="VALUE" x="9.1694" y="27.3685" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C8" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" package3d_urn="urn:adsk.eagle:package:32378/1" value="7pF" x="7.112" y="28.956" rot="R270">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="7.112" y="28.956" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="8.382" y="29.21" size="0.635" layer="33" ratio="10" rot="R180"/>
-<attribute name="NAME" x="8.382" y="28.067" size="0.889" layer="25" ratio="11" rot="R180"/>
-<attribute name="VALUE" x="8.382" y="30.5435" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="180pF" x="20.828" y="15.113" rot="R90">
-<attribute name="NAME" x="20.066" y="15.113" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-11661" x="20.828" y="15.113" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="21.59" y="15.113" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X06" package3d_urn="urn:adsk.eagle:package:22474/2" value="" x="15.1892" y="4.0132">
-<attribute name="NAME" x="7.5692" y="7.1882" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="7.5692" y="-0.4318" size="1.27" layer="27"/>
-</element>
-<element name="L1" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" package="L0603" package3d_urn="urn:adsk.eagle:package:5829817/3" value="560nH" x="18.5674" y="15.24" rot="R270">
-<attribute name="NAME" x="19.4564" y="16.129" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="16.5354" y="16.129" size="1.27" layer="27" rot="R270"/>
-</element>
-<element name="L2" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" package="L0603" package3d_urn="urn:adsk.eagle:package:5829817/3" value="560nH" x="18.5674" y="18.3134" rot="R90">
-<attribute name="NAME" x="17.6784" y="17.4244" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="20.5994" y="17.4244" size="1.27" layer="27" rot="R90"/>
-</element>
+<element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X06" package3d_urn="urn:adsk.eagle:package:22474/2" value="" x="15.1892" y="4.0132"/>
+<element name="L1" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" package="L0603" package3d_urn="urn:adsk.eagle:package:5829817/3" value="560nH" x="18.5674" y="15.24" rot="R270"/>
+<element name="L2" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" package="L0603" package3d_urn="urn:adsk.eagle:package:5829817/3" value="560nH" x="18.5674" y="18.3134" rot="R90"/>
 <element name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" package="HC49/S" package3d_urn="urn:adsk.eagle:package:12071/1" value="27.12MHz" x="8.7884" y="34.036" rot="R180">
 <attribute name="MF" value="" x="8.7884" y="34.036" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="8.7884" y="34.036" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.8684" y="31.369" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="OC_FARNELL" value="1667008" x="8.7884" y="34.036" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="8.7884" y="34.036" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="13.8684" y="37.973" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k" x="15.0114" y="23.357840625" rot="R90">
-<attribute name="NAME" x="14.2494" y="23.357840625" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-07856" x="15.0114" y="23.357840625" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="15.7734" y="23.357840625" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k" x="17.7038" y="22.5298" rot="R180">
-<attribute name="NAME" x="17.7038" y="21.7678" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-07856" x="17.7038" y="22.5298" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="17.7038" y="23.2918" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
 <element name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k" x="3.2258" y="19.0754" rot="R180">
-<attribute name="NAME" x="3.2258" y="18.3134" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-07856" x="3.2258" y="19.0754" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="3.2258" y="19.8374" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
 <element name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k" x="3.2258" y="16.6116" rot="R180">
-<attribute name="NAME" x="3.2258" y="15.8496" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-07856" x="3.2258" y="16.6116" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="3.2258" y="17.3736" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
 <element name="R5" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_1206" package3d_urn="urn:adsk.eagle:package:10872898/2" value="0" x="29.464" y="15.7734" rot="R180">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="29.464" y="15.7734" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="P0.0ETR-ND" x="29.464" y="15.7734" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="29.464" y="15.7734" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="ERJ-8GEY0R00V" x="29.464" y="15.7734" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="31.75" y="14.5034" size="0.87" layer="25" ratio="10" rot="R180"/>
 <attribute name="PACKAGE" value="SMD 1206" x="29.464" y="15.7734" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="31.75" y="18.0594" size="0.87" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_1206" package3d_urn="urn:adsk.eagle:package:10872898/2" value="0" x="29.4386" y="17.9832" rot="R180">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="29.4386" y="17.9832" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="P0.0ETR-ND" x="29.4386" y="17.9832" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="29.4386" y="17.9832" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="ERJ-8GEY0R00V" x="29.4386" y="17.9832" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="31.7246" y="16.7132" size="0.87" layer="25" ratio="10" rot="R180"/>
 <attribute name="PACKAGE" value="SMD 1206" x="29.4386" y="17.9832" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="31.7246" y="20.2692" size="0.87" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="U$1" library="SeniorDesignParts" package="HVQFN32" value="MFRC522" x="12.6812" y="13.7404" rot="R90">
-<attribute name="NAME" x="5.1962" y="13.5254" size="1" layer="25" rot="R90"/>
-<attribute name="VALUE" x="14.9512" y="13.5254" size="1" layer="27" rot="R90"/>
-</element>
-<element name="H1" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" package="STAND-OFF" package3d_urn="urn:adsk.eagle:package:38630/1" value="STAND-OFF" x="35" y="34">
-<attribute name="NAME" x="35" y="36.032" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="35" y="31.968" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
-</element>
-<element name="H2" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" package="STAND-OFF" package3d_urn="urn:adsk.eagle:package:38630/1" value="STAND-OFF" x="35" y="3.2">
-<attribute name="NAME" x="35" y="5.232" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="35" y="1.168" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
-</element>
-<element name="H3" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" package="STAND-OFF" package3d_urn="urn:adsk.eagle:package:38630/1" value="STAND-OFF" x="2.9" y="27">
-<attribute name="NAME" x="2.9" y="29.032" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="2.9" y="24.968" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
-</element>
+<element name="U$1" library="SeniorDesignParts" package="HVQFN32" value="MFRC522" x="12.6812" y="13.7404" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1209,13 +1089,6 @@ Please make sure your boards conform to these design rules.
 </polygon>
 <wire x1="21.5392" y1="2.7432" x2="25.1206" y2="6.3246" width="0.254" layer="1"/>
 <wire x1="25.1206" y1="6.3246" x2="25.1206" y2="14.263" width="0.254" layer="1"/>
-<via x="23.8" y="8.2" extent="1-16" drill="0.35"/>
-<via x="24.7" y="2.1" extent="1-16" drill="0.35"/>
-<via x="15.3" y="8.2" extent="1-16" drill="0.35"/>
-<via x="2.3" y="7.4" extent="1-16" drill="0.35"/>
-<via x="24" y="22.6" extent="1-16" drill="0.35"/>
-<via x="3" y="22.3" extent="1-16" drill="0.35"/>
-<via x="19.7" y="11.2" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="SCLK">
 <contactref element="JP1" pad="6"/>
@@ -1810,6 +1683,27 @@ Please make sure your boards conform to these design rules.
 <wire x1="39.0652" y1="15.7988" x2="39.0144" y2="15.7988" width="0.2032" layer="16"/>
 <wire x1="52.501821875" y1="17.9198" x2="51.765221875" y2="17.1832" width="0.2032" layer="16"/>
 </signal>
+<signal name="N$4">
+<via x="19.7" y="11.2" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$8">
+<via x="2.3" y="7.4" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$12">
+<via x="3" y="22.3" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$13">
+<via x="15.3" y="8.2" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$14">
+<via x="24" y="22.6" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$15">
+<via x="22.7" y="9.3" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$16">
+<via x="24.7" y="2.1" extent="1-16" drill="0.35"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -1821,10 +1715,6 @@ Please make sure your boards conform to these design rules.
 </board>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

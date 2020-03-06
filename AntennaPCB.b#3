@@ -175,6 +175,10 @@
 <wire x1="76.2" y1="0" x2="76.2" y2="38.1" width="0" layer="20"/>
 <wire x1="76.2" y1="38.1" x2="0" y2="38.1" width="0" layer="20"/>
 <wire x1="0" y1="38.1" x2="0" y2="0" width="0" layer="20"/>
+<text x="28" y="0.4" size="1" layer="125">Antenna Board V1
+Group 15 Dabble
+Melchor De La Garza
+Cynthia Zatlokowicz</text>
 </plain>
 <libraries>
 <library name="Seeed-Capacitor" urn="urn:adsk.eagle:library:464">
@@ -1089,6 +1093,13 @@ Please make sure your boards conform to these design rules.
 </polygon>
 <wire x1="21.5392" y1="2.7432" x2="25.1206" y2="6.3246" width="0.254" layer="1"/>
 <wire x1="25.1206" y1="6.3246" x2="25.1206" y2="14.263" width="0.254" layer="1"/>
+<via x="24.9" y="8.6" extent="1-16" drill="0.35"/>
+<via x="24.7" y="2.1" extent="1-16" drill="0.35"/>
+<via x="15.3" y="8.2" extent="1-16" drill="0.35"/>
+<via x="2.3" y="7.4" extent="1-16" drill="0.35"/>
+<via x="24" y="22.6" extent="1-16" drill="0.35"/>
+<via x="3" y="22.3" extent="1-16" drill="0.35"/>
+<via x="19.7" y="11.2" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="SCLK">
 <contactref element="JP1" pad="6"/>
@@ -1683,27 +1694,6 @@ Please make sure your boards conform to these design rules.
 <wire x1="39.0652" y1="15.7988" x2="39.0144" y2="15.7988" width="0.2032" layer="16"/>
 <wire x1="52.501821875" y1="17.9198" x2="51.765221875" y2="17.1832" width="0.2032" layer="16"/>
 </signal>
-<signal name="N$4">
-<via x="19.7" y="11.2" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="N$8">
-<via x="2.3" y="7.4" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="N$12">
-<via x="3" y="22.3" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="N$13">
-<via x="15.3" y="8.2" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="N$14">
-<via x="24" y="22.6" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="N$15">
-<via x="22.7" y="9.3" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="N$16">
-<via x="24.7" y="2.1" extent="1-16" drill="0.35"/>
-</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -1715,6 +1705,10 @@ Please make sure your boards conform to these design rules.
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
