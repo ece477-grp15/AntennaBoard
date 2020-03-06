@@ -1121,9 +1121,17 @@ design rules under a new name.</description>
 <vertex x="43.18" y="24.4094"/>
 <vertex x="0" y="24.4094"/>
 </polygon>
-<wire x1="11.1312" y1="20.3529" x2="9.6774" y2="28.956" width="0" layer="19" extent="1-1"/>
+<wire x1="9.6774" y1="28.956" x2="9.6774" y2="25.9334" width="0.381" layer="1"/>
+<wire x1="9.6774" y1="25.9334" x2="8.9916" y2="25.2476" width="0.381" layer="1"/>
+<via x="8.9916" y="25.2476" extent="1-16" drill="0.35"/>
+<wire x1="8.9916" y1="25.2476" x2="8.9916" y2="23.9268" width="0.381" layer="16"/>
+<wire x1="8.9916" y1="23.9268" x2="10.668" y2="22.2504" width="0.381" layer="16"/>
+<via x="10.668" y="22.2504" extent="1-16" drill="0.35"/>
+<wire x1="10.668" y1="22.2504" x2="10.668" y2="21.5646" width="0.381" layer="1"/>
+<wire x1="11.1312" y1="21.1014" x2="11.1312" y2="20.3529" width="0.381" layer="1"/>
+<wire x1="10.668" y1="21.5646" x2="11.1312" y2="21.1014" width="0.381" layer="1"/>
+<wire x1="9.8312" y1="13.4779" x2="9.5062" y2="16.9154" width="0" layer="19" extent="1-1"/>
 <wire x1="12.9437" y1="17.8904" x2="12.9437" y2="15.2904" width="0" layer="19" extent="1-1"/>
-<wire x1="9.5062" y1="16.9154" x2="9.8312" y2="13.4779" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCLK">
 <contactref element="JP1" pad="6"/>

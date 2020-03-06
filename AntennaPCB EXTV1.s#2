@@ -3128,8 +3128,8 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49S" package3d_urn="urn:adsk.eagle:package:12071/1" value="27.12MHz"/>
-<part name="C7" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-1UF-25V-10%-X7R(0603)" device="" package3d_urn="urn:adsk.eagle:package:32378/1" value="1uf"/>
-<part name="C8" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-1UF-25V-10%-X7R(0603)" device="" package3d_urn="urn:adsk.eagle:package:32378/1" value="1uf"/>
+<part name="C7" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-1UF-25V-10%-X7R(0603)" device="" package3d_urn="urn:adsk.eagle:package:32378/1" value="7pF"/>
+<part name="C8" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" deviceset="CERAMIC-1UF-25V-10%-X7R(0603)" device="" package3d_urn="urn:adsk.eagle:package:32378/1" value="7pF"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L1" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5829817/3" value="560nH"/>
 <part name="L2" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5829817/3" value="560nH"/>

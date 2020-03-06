@@ -1093,7 +1093,7 @@ Please make sure your boards conform to these design rules.
 </polygon>
 <wire x1="21.5392" y1="2.7432" x2="25.1206" y2="6.3246" width="0.254" layer="1"/>
 <wire x1="25.1206" y1="6.3246" x2="25.1206" y2="14.263" width="0.254" layer="1"/>
-<via x="24.9" y="8.6" extent="1-16" drill="0.35"/>
+<via x="23.8" y="8.2" extent="1-16" drill="0.35"/>
 <via x="24.7" y="2.1" extent="1-16" drill="0.35"/>
 <via x="15.3" y="8.2" extent="1-16" drill="0.35"/>
 <via x="2.3" y="7.4" extent="1-16" drill="0.35"/>

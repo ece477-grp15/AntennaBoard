@@ -3518,13 +3518,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <junction x="175.26" y="124.46"/>
 </segment>
 </net>
-<net name="RST" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="NRSTPD"/>
-<wire x1="99.06" y1="139.7" x2="88.9" y2="139.7" width="0.1524" layer="91"/>
-<label x="88.9" y="139.7" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="ANT_1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="TX1"/>
